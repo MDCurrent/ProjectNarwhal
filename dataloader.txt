@@ -11,3 +11,11 @@ create table MedicalRecords (
     description text not null,
     recordDate date
 );
+
+create table Blocks (
+	UUID int primary key,
+	recordId int not null,
+	prevHash,
+	blockHash,
+	tmStamp date	
+);
