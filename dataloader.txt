@@ -1,0 +1,13 @@
+/* 
+file intended to hold all basic additions to the db, never delete anything in this file, just write code to edit it
+I will see about writing something to automate changes in an alter batch file list (not a priority obviously haha)
+*/
+
+create table MedicalRecords (
+	recordId int primary key,
+    patientID int not null,
+    doctorId int,
+    treatment text not null,
+    description text not null,
+    recordDate date
+);
