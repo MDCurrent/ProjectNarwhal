@@ -29,7 +29,7 @@ public class medicalRecord
 		return recordId;
 	}
 	
-	public void setRecordId(int recordId){
+	private void setRecordId(int recordId){
 		this.recordId = recordId;
 	}
 	
