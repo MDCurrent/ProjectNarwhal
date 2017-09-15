@@ -1,3 +1,4 @@
+package Classes;
 import java.util.Date;
 
 public class medicalRecord 
@@ -48,7 +49,7 @@ public class medicalRecord
 		this.doctorId = doctorId;
 	}
 	
-	public int getTreatment(){
+	public String getTreatment(){
 		return treatment;
 	}
 	
@@ -56,7 +57,7 @@ public class medicalRecord
 		this.treatment = treatment;
 	}
 	
-	public int getDescription(){
+	public String getDescription(){
 		return description;
 	}
 	
@@ -64,7 +65,7 @@ public class medicalRecord
 		this.description = description;
 	}
 	
-	public int getRecordDate(){
+	public Date getRecordDate(){
 		return recordDate;
 	}
 	
