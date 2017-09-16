@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 15, 2017 1:25:28 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="models.medicalRecord" table="MEDICALRECORD">
+        <id name="recordId" type="int">
+            <column name="RECORDID" />
+            <generator class="assigned" />
+        </id>
+        <property name="doctorId" type="int">
+            <column name="DOCTORID" />
+        </property>
+        <property name="patientId" type="int" access="field">
+            <column name="PATIENTID" />
+        </property>
+        <property name="treatment" type="java.lang.String">
+            <column name="TREATMENT" />
+        </property>
+        <property name="description" type="java.lang.String" access="field">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="recordDate" type="timestamp" access="field">
+            <column name="RECORDDATE" />
+        </property>
+    </class>
+</hibernate-mapping>
