@@ -1,6 +1,4 @@
-/Classes/
-/MappingFiles/
-/medicalRecord.class
 /hibernate.cfg.xml
-/main/
-/resources/
+/medicalRecord.hbm.xml
+/models/
+/util/

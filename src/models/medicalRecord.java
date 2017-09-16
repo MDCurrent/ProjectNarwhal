@@ -1,4 +1,4 @@
-package main.java;
+package models;
 import java.util.Date;
 
 public class medicalRecord 
@@ -29,15 +29,15 @@ public class medicalRecord
 		return recordId;
 	}
 	
-	private void setRecordId(int recordId){
+	public void setRecordId(int recordId){
 		this.recordId = recordId;
 	}
 	
-	public int getPatentId(){
+	public int getPatientId(){
 		return patientId;
 	}
 	
-	public void setPatentId(int patientId){
+	public void setPatientId(int patientId){
 		this.patientId = patientId;
 	}
 	
@@ -61,7 +61,7 @@ public class medicalRecord
 		return description;
 	}
 	
-	public void setDesciption(String description){
+	public void setDescription(String description){
 		this.description = description;
 	}
 	
@@ -69,7 +69,7 @@ public class medicalRecord
 		return recordDate;
 	}
 	
-	public void set(Date recordDate){
+	public void setRecordDate(Date recordDate){
 		this.recordDate = recordDate;
 	}
 }

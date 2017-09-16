@@ -7,6 +7,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
+import java.util.Date;
 import models.medicalRecord;
 
 public class HibernateUtil {
@@ -22,12 +23,12 @@ public class HibernateUtil {
 
                 Session session = sf.openSession();
                 medicalRecord medRec = new medicalRecord();
-                medRec.recordId = 1;
-                medRec.patientId = 2;
-                medRec.doctorId = 3;
-                medRec.treatment = "nothing";
-                medRec.description = "something";
-                medRec.recordDate = null;
+                medRec.setRecordId(1);
+                medRec.setPatientId(2);
+                medRec.setDoctorId(3);
+                medRec.setTreatment("nothing");
+                medRec.setDescription("something");
+                medRec.setRecordDate(new Date());
 
                 Transaction tx = session.beginTransaction();
                 session.save(medRec);
