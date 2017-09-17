@@ -6,9 +6,8 @@
 	<session-factory>
 	
 		<property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
-	    <property name="hibernate.connection.url">jdbc:sqlserver://localhost;databaseName=Narwhal</property>
-	    <property name="hibernate.connection.username">admin</property>
-	    <property name="hibernate.connection.password">password</property>
+	    <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=Narwhal;integratedSecurity=true</property>
+
 	    <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
 	
 	    <property name="hibernate.connection.pool_size">100</property>        
