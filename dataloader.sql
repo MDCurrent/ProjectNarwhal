@@ -4,8 +4,8 @@ I will see about writing something to automate changes in an alter batch file li
 */
 
 create table MedicalRecords (
-	recordId int primary key,
-    patientID int not null,
+	recordId int not null identity(1,1) primary key,
+    patientId int not null,
     doctorId int,
     treatment text not null,
     description text not null,

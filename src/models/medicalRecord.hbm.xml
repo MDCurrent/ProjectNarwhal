@@ -6,7 +6,7 @@
     <class name="models.medicalRecord" table="MEDICALRECORDS">
         <id name="recordId" type="int">
             <column name="RECORDID" />
-            <generator class="assigned" />
+            <generator class="identity" />
         </id>
         <property name="doctorId" type="int">
             <column name="DOCTORID" />
