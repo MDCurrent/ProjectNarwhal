@@ -7,6 +7,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
+import models.user;
 import models.medicalRecord;
 import java.util.Scanner;
 import BL.addRecord;
@@ -15,12 +16,10 @@ public class HibernateUtil {
 
 	public static void main(String[] args) {
 		
-		addRecord addRec = new addRecord();
-		medicalRecord newRecord = new medicalRecord();
-		
-		Configuration cf = new Configuration().configure("hibernate.cfg.xml");
+		Configuration cf = new Configuration().configure("hibernateSean.cfg.xml");
 		
 		cf.addClass(medicalRecord.class);
+		cf.addClass(user.class);
 		
 		StandardServiceRegistryBuilder srb = new StandardServiceRegistryBuilder();
 		srb.applySettings(cf.getProperties());
@@ -31,6 +30,9 @@ public class HibernateUtil {
 		
 		Scanner scanner = new Scanner(System.in);
 		
+		addRecord addRec = new addRecord();
+		medicalRecord newRecord = new medicalRecord();
+				
 		System.out.println("Would you like to \'lookup\' or \'add\' a Record?");
 		String answer = scanner.next();
 		

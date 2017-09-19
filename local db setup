@@ -1,0 +1,13 @@
+The required software to run the db locally include:
+	Microsoft SQL Server Management Studio 17
+	Microsoft SQL Server 2016 Installation Center
+
+Once you have the db setup create a hibernate.cfg.xml similar to hibernateSean.cfg.xml and add your local information so that hibernate 
+can connect with the db
+
+When you want to run the program locally go into hibernateUtil.java and change the configuration to load your config file
+
+Download sqljdbc_6.0.8112.100_enu from microsoft and add sqljdbc_auth.dll to Java/'version'jdk/lib 
+	(this will allow hibernate to login into the db using windows authentication)
+	
+run HibernateUtil.java as a java application and you should be able to add an entry into you db
