@@ -69,7 +69,7 @@ public class medicalRecord
 		return recordDate;
 	}
 	
-	public void setRecordDate(){
-		this.recordDate = new Date();
+	public void setRecordDate(Date recordDate){
+		this.recordDate = recordDate;
 	}
 }
