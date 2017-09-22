@@ -1,6 +1,7 @@
 package BL;
 
 import models.medicalRecord;
+import java.util.Date;
 import java.util.Scanner;
 
 public class addRecord {
@@ -55,7 +56,6 @@ public class addRecord {
 		while(!validTreatmentGiven){
 			System.out.print("Treatment: ");
 			scanner.reset();
-			//TODO We can cross reference this Id with the Doctor table to make sure they are a valid doctor later
 			try{
 	    		newRecord.setTreatment(scanner.next());
 	    		validTreatmentGiven = true;
@@ -71,7 +71,6 @@ public class addRecord {
 		while(!validDescriptionGiven){
 			System.out.print("Description: ");
 			scanner.reset();
-			//TODO We can cross reference this Id with the Doctor table to make sure they are a valid doctor later
 			try{
 	    		newRecord.setDescription(scanner.next());
 	    		validDescriptionGiven = true;
@@ -83,7 +82,8 @@ public class addRecord {
 	}
 	
 	private void inputRecordDate(medicalRecord newRecord){
-		newRecord.setRecordDate();
+		Date currentDate = new Date();
+		newRecord.setRecordDate(currentDate);
 		System.out.println("This records input date is: " + newRecord.getRecordDate());
 	}
 }
