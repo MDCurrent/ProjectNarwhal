@@ -1,13 +1,15 @@
 package main.java.Services;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 
-import main.java.Services.addRecord;
 import main.java.Classes.HibernateUtil;
 import main.java.Classes.medicalRecord;
+import main.java.Services.medicalRecordServices.addRecord;
  
 public class ConsoleTest {
     public static void main(String[] args) {
@@ -24,18 +26,19 @@ public class ConsoleTest {
 		String answer = scanner.next();
 		
 		if(answer.equals("lookup")){
-			System.out.println("Here are all the records you have access to: ");
+			Query query = session.createQuery("from medicalRecord where patientId = '1' ");
+			List list = query.list();
+			System.out.println(list.get(0));
         }
 		else if(answer.equals("add")){
 			newRecord = addRec.addMedicalRecord();
+	        session.save(newRecord);
+	        session.getTransaction().commit();
         }
 		else{
 			System.out.println("Please enter either \'lookup\' or \'add\'");
         }
         
-        session.save(newRecord);
-        session.getTransaction().commit();
- 
     }
  
 }

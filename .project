@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>gs-maven</name>
+	<name>ProjectNarwhal</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -31,12 +31,12 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<name>com.genuitec.eclipse.typescript.typeScriptBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>com.genuitec.eclipse.typescript.typeScriptBuilder</name>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>

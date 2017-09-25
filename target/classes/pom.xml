@@ -36,8 +36,8 @@
         <!-- hibernate for db operations -->
         <dependency>
             <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>4.3.5.Final</version>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>3.6.10.Final</version>
         </dependency>
 
     </dependencies>

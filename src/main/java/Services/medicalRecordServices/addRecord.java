@@ -1,4 +1,4 @@
-package main.java.Services;
+package main.java.Services.medicalRecordServices;
 
 import main.java.Classes.medicalRecord;
 import java.util.Date;

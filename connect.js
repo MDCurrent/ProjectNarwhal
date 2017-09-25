@@ -8,7 +8,7 @@ var config = {
   password: '1234', // update me
   server: 'localhost',
   options: {
-      database: 'SampleDB'
+      database: 'Narwhal'
   }
 }
 var connection = new Connection(config);
