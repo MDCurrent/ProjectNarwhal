@@ -15,7 +15,7 @@ create table MedicalRecords (
 create table Users (
 	userId int not null identity(1,1) primary key,
 	userName varchar(100) not null unique,
-	passowrd char(40) not null,
+	password char(40) not null,
 	firstName text not null,
 	lastName text not null,
 );

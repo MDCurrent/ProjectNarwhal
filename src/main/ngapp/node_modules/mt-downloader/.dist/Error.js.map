@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/Error.js"],"names":[],"mappings":";;;;AAIA;;;;;AAEO,MAAM,QAAN,SAAuB,KAAvB,CAA6B;QAAvB,Q,GAAA,Q;AACN,MAAM,gDAAoB,mCAA1B","file":"Error.js","sourcesContent":["/**\n * Created by tushar.mathur on 25/03/16.\n */\n\n'use strict'\n\nexport class MTDError extends Error {}\nexport const FILE_SIZE_UNKNOWN = 'File size could not be determined'\n"]}

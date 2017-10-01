@@ -1,0 +1,9 @@
+to create a class in this project follow these steps:
+
+1) create any corresponding tables in the db (save these alters to dataloader [this may change later])
+
+2) follow the examples in this folder (such as medicalRecord.java) to create the base class
+
+3) create the hibernate mapping file in src.main.resources (again follow the examples)
+
+4) you should now be able to import and use your class (make sure to use a Service for any manipulation)
